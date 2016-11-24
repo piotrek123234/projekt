@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream>zmiana
 #include <windows.h>
   #include <conio.h>
      
