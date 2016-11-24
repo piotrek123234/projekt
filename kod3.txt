@@ -8,7 +8,7 @@ int waga, wzrost;
 float bmi;
  
  
-      
+      123123213213213213
 cout << "Podaj swoj wzrost(cm): ";
 cin >> wzrost;
  
