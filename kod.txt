@@ -7,15 +7,15 @@ public class Fkwadratowa
     public static void main(String[] args) throws NumberFormatException, 
         IOException 
     {
-        BufferedReader reader = new BufferedReader(new
+        BufferedReader reader = new BufferedReader(nezmianasdasw
             InputStreamReader(System.in));
         int a,b,c,delta;
         double pdelta,x0,x1,x2;
-        System.out.print("Funkcja kwadratowa ma postaÊ Ax^2+Bx+C\nWprowadü wartoúÊ dla A: ");
+        System.out.print("Funkcja kwadratowa ma posta√¶ Ax^2+Bx+C\nWprowad≈∏ warto≈ì√¶ dla A: ");
         a=Integer.parseInt(reader.readLine());
-        System.out.print("Wprowadü wartoúÊ dla B: ");
+        System.out.print("Wprowad≈∏ warto≈ì√¶ dla B: ");
         b=Integer.parseInt(reader.readLine());
-        System.out.print("Wprowadü wartoúÊ dla C: ");
+        System.out.print("Wprowad≈∏ warto≈ì√¶ dla C: ");
         c=Integer.parseInt(reader.readLine());
         delta=(b*b-4*a*c);
         pdelta = Math.sqrt(delta);
