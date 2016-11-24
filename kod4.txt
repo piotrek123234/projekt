@@ -1,198 +1,198 @@
 #include <iostream>
 #include <string>
 #include <math.h>
- 
+Â 
 using namespace std;
- 
- double a, b, c, p, q, delta, x1, x2;
-     int liczba;
-      
-      
-      
+Â 
+Â double a, b, c, p, q, delta, x1, x2;
+Â Â Â Â Â int liczba;
+Â Â Â Â Â Â 
+Â Â Â Â Â Â zmiana
+Â Â Â Â Â Â 
 void funkcje_programu()
 {
- 
- 
-      cout << endl << "----------------------------------------" << endl;
-      cout << "[1] Licz postac kanoniczna z ogolnej." << endl;
-      cout << "[2] Licz postac ogolna z kanonicznej." << endl;
-      cout << "[0] Wyjdz z programu." << endl;
+Â 
+Â 
+Â Â Â Â Â Â cout << endl << "----------------------------------------" << endl;
+Â Â Â Â Â Â cout << "[1] Licz postac kanoniczna z ogolnej." << endl;
+Â Â Â Â Â Â cout << "[2] Licz postac ogolna z kanonicznej." << endl;
+Â Â Â Â Â Â cout << "[0] Wyjdz z programu." << endl;
 }
- 
+Â 
 double pobierz(double liczba){
-       while(!(cin>>liczba)){
-            cout << "Podaj poprawna wartosc: ";
-  cin.clear(); 
-  cin.sync();}
-  return liczba;
-       }
- 
+Â Â Â Â Â Â Â while(!(cin>>liczba)){
+Â Â Â Â Â Â Â Â Â Â Â Â cout << "Podaj poprawna wartosc: ";
+Â Â cin.clear(); 
+Â Â cin.sync();}
+Â Â return liczba;
+Â Â Â Â Â Â Â }
+Â 
 void parametry()
 {
-         cout    << endl  << endl  << "Parametry:" << endl;
-     
-    cout << "Dziedzina: Rzeczywista" << endl;
-    cout << "Zbior wartosci: <"; 
-    if(a<0) cout << q << ",-oo)" <<  endl;
-    else cout << q << ",+oo)" << endl;
-    cout << "Pierwiastek z delty: " << sqrt(delta) << endl;
-    cout << "Miejsce zerowe: ";
-  if(delta > 0) 
-  {
-     x1 = (-b - sqrt(delta)) / (2*a);
-     x2 = (-b + sqrt(delta)) / (2*a);
-     cout << "x=" << x1 << " x=" << x2 << endl;
-      
-     cout << "f(x)>0 dla x: ";
-     if(a>0) cout << "(-oo," << x1 <<"),(" << x2 << "+oo)";
-     else cout << "(" << x1 << "," << x2 << ")";
-        cout << endl << "f(x)<0 dla x: ";
-     if(a>0) cout << "(" << x1 << "," << x2 << ")";
-  else cout << "(-oo," << x1 <<"),(" << x2 << "+oo)";
-     cout << endl;
-      
-      
-  }else if(delta = 0)
-  {
-        cout << "x=" << p << endl;
-        cout << "f(x)>0 dla x: ";
-        if(a>0) cout << "Zbior Rzeczywisty / {" << p <<"}";
-        else  cout << "Zbior Pusty";
-         
-        cout << endl << "f(x)<0 dla x: ";
-       if(a>0)  cout << "Zbior Pusty";
-       else cout << "Zbior Rzeczywisty / {" << p <<"}";
-         
-         
+Â Â Â Â Â Â Â Â Â coutÂ Â Â  << endlÂ  << endlÂ  << "Parametry:" << endl;
+Â Â Â Â Â 
+Â Â Â Â cout << "Dziedzina: Rzeczywista" << endl;
+Â Â Â Â cout << "Zbior wartosci: <"; 
+Â Â Â Â if(a<0) cout << q << ",-oo)" <<Â  endl;
+Â Â Â Â else cout << q << ",+oo)" << endl;
+Â Â Â Â cout << "Pierwiastek z delty: " << sqrt(delta) << endl;
+Â Â Â Â cout << "Miejsce zerowe: ";
+Â Â if(delta > 0) 
+Â Â {
+Â Â Â Â Â x1 = (-b - sqrt(delta)) / (2*a);
+Â Â Â Â Â x2 = (-b + sqrt(delta)) / (2*a);
+Â Â Â Â Â cout << "x=" << x1 << " x=" << x2 << endl;
+Â Â Â Â Â Â 
+Â Â Â Â Â cout << "f(x)>0 dla x: ";
+Â Â Â Â Â if(a>0) cout << "(-oo," << x1 <<"),(" << x2 << "+oo)";
+Â Â Â Â Â else cout << "(" << x1 << "," << x2 << ")";
+Â Â Â Â Â Â Â Â cout << endl << "f(x)<0 dla x: ";
+Â Â Â Â Â if(a>0) cout << "(" << x1 << "," << x2 << ")";
+Â Â else cout << "(-oo," << x1 <<"),(" << x2 << "+oo)";
+Â Â Â Â Â cout << endl;
+Â Â Â Â Â Â 
+Â Â Â Â Â Â 
+Â Â }else if(delta = 0)
+Â Â {
+Â Â Â Â Â Â Â Â cout << "x=" << p << endl;
+Â Â Â Â Â Â Â Â cout << "f(x)>0 dla x: ";
+Â Â Â Â Â Â Â Â if(a>0) cout << "Zbior Rzeczywisty / {" << p <<"}";
+Â Â Â Â Â Â Â Â elseÂ  cout << "Zbior Pusty";
+Â Â Â Â Â Â Â Â Â 
+Â Â Â Â Â Â Â Â cout << endl << "f(x)<0 dla x: ";
+Â Â Â Â Â Â Â if(a>0)Â  cout << "Zbior Pusty";
+Â Â Â Â Â Â Â else cout << "Zbior Rzeczywisty / {" << p <<"}";
+Â Â Â Â Â Â Â Â Â 
+Â Â Â Â Â Â Â Â Â 
 }else
 {
-     cout << "Brak miejsc zerowych!" << endl;
-     cout << "f(x)>0 dla x: ";
-    if(a>0) cout << "Zbior Rzeczywisty";
-        else  cout << "Zbior Pusty";
-         
-         
-          cout << endl << "f(x)<0 dla x: ";
-        if(a<0) cout << "Zbior Rzeczywisty";
-        else  cout << "Zbior Pusty";
-      
+Â Â Â Â Â cout << "Brak miejsc zerowych!" << endl;
+Â Â Â Â Â cout << "f(x)>0 dla x: ";
+Â Â Â Â if(a>0) cout << "Zbior Rzeczywisty";
+Â Â Â Â Â Â Â Â elseÂ  cout << "Zbior Pusty";
+Â Â Â Â Â Â Â Â Â 
+Â Â Â Â Â Â Â Â Â 
+Â Â Â Â Â Â Â Â Â Â cout << endl << "f(x)<0 dla x: ";
+Â Â Â Â Â Â Â Â if(a<0) cout << "Zbior Rzeczywisty";
+Â Â Â Â Â Â Â Â elseÂ  cout << "Zbior Pusty";
+Â Â Â Â Â Â 
 }
- 
-    cout<<endl << "Funkcja rosnaca: "; 
-    if(a<0) cout << "(-oo," << p << ">" << endl;
-    else if(a>0) cout << "<" <<  p  <<",+oo)" << endl;
-    cout << "Funkcja malejaca: "; 
-    if(a>0) cout << "(-oo," << p << ">";
-    else if(a<0) cout << "<" <<  p  <<",+oo)";
-    cout << endl;
-    if(a<0) cout << "Wartosc minimalna: ";
-    if (a>0) cout << "Wartosc maksymalna: "; 
-      cout << "y=" << q << " dla x=" << p << endl;
-      cout << "Wierzcholek: (" << p <<","<< q << ")"<< endl;
-     cout << "Postac iloczynowa: ";
-     if(delta > 0) 
-     {
-     cout << "y=a(x";
-      if(x1<0) cout << "+" << -x1 << ")";
-      else cout << "-" << x1 << ")";
-      if(x2<0) cout << "(x+" << -x2 << ")" << endl;
-       else cout << "(x-" << x2 << ")" << endl;
-              }
-     else if(delta = 0)
-     {
-         if(p<0) cout << "y=(x+" << -p << ")2" << endl;
-         else cout << "y=(x-" << p << ")2" << endl;
-          } 
-      else cout << "Postac iloczynowa nie istnieje!" << endl;
-     
-     
- 
-     
-     }
- 
+Â 
+Â Â Â Â cout<<endl << "Funkcja rosnaca: "; 
+Â Â Â Â if(a<0) cout << "(-oo," << p << ">" << endl;
+Â Â Â Â else if(a>0) cout << "<" <<Â  pÂ  <<",+oo)" << endl;
+Â Â Â Â cout << "Funkcja malejaca: "; 
+Â Â Â Â if(a>0) cout << "(-oo," << p << ">";
+Â Â Â Â else if(a<0) cout << "<" <<Â  pÂ  <<",+oo)";
+Â Â Â Â cout << endl;
+Â Â Â Â if(a<0) cout << "Wartosc minimalna: ";
+Â Â Â Â if (a>0) cout << "Wartosc maksymalna: "; 
+Â Â Â Â Â Â cout << "y=" << q << " dla x=" << p << endl;
+Â Â Â Â Â Â cout << "Wierzcholek: (" << p <<","<< q << ")"<< endl;
+Â Â Â Â Â cout << "Postac iloczynowa: ";
+Â Â Â Â Â if(delta > 0) 
+Â Â Â Â Â {
+Â Â Â Â Â cout << "y=a(x";
+Â Â Â Â Â Â if(x1<0) cout << "+" << -x1 << ")";
+Â Â Â Â Â Â else cout << "-" << x1 << ")";
+Â Â Â Â Â Â if(x2<0) cout << "(x+" << -x2 << ")" << endl;
+Â Â Â Â Â Â Â else cout << "(x-" << x2 << ")" << endl;
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â }
+Â Â Â Â Â else if(delta = 0)
+Â Â Â Â Â {
+Â Â Â Â Â Â Â Â Â if(p<0) cout << "y=(x+" << -p << ")2" << endl;
+Â Â Â Â Â Â Â Â Â else cout << "y=(x-" << p << ")2" << endl;
+Â Â Â Â Â Â Â Â Â Â } 
+Â Â Â Â Â Â else cout << "Postac iloczynowa nie istnieje!" << endl;
+Â Â Â Â Â 
+Â Â Â Â Â 
+Â 
+Â Â Â Â Â 
+Â Â Â Â Â }
+Â 
 void kanoniczna()
 {
-     cout << "y=ax2+bx+c -> y=a(x-p)2+q" << endl;
-     cout << "Podaj wartosc a: ";
-       a= pobierz(a);
+Â Â Â Â Â cout << "y=ax2+bx+c -> y=a(x-p)2+q" << endl;
+Â Â Â Â Â cout << "Podaj wartosc a: ";
+Â Â Â Â Â Â Â a= pobierz(a);
 cout << "Podaj wartosc b: ";
-      b= pobierz(b);
+Â Â Â Â Â Â b= pobierz(b);
 cout << "Podaj wartosc c: ";
 c= pobierz(c);
- 
+Â 
 p = -b / (2*a);
 delta = (b*b) - (4*a*c);
 q = -delta / (4*a);
 cout << "Wartosc p: " << p << endl;
 cout << "Wartosc wyroznika trojmianu kwadratowego(delty): " << delta << endl;
-cout << "Wartosc q: " << q << endl  << endl;
+cout << "Wartosc q: " << q << endlÂ  << endl;
 cout << "Postac kanoniczna: ";
-   cout << "y="
-        << a;
-    if(p < 0) 
-    {
-  cout      << "(x+" << -p;
-        }else
-        {
-cout        << "(x-" << p; 
-             }
-     if(q < 0) cout << ")2-" << -q ;
-        else cout <<")2+" << q;
-        parametry();
-         
+Â Â Â cout << "y="
+Â Â Â Â Â Â Â Â << a;
+Â Â Â Â if(p < 0) 
+Â Â Â Â {
+Â Â coutÂ Â Â Â Â  << "(x+" << -p;
+Â Â Â Â Â Â Â Â }else
+Â Â Â Â Â Â Â Â {
+coutÂ Â Â Â Â Â Â  << "(x-" << p; 
+Â Â Â Â Â Â Â Â Â Â Â Â Â }
+Â Â Â Â Â if(q < 0) cout << ")2-" << -q ;
+Â Â Â Â Â Â Â Â else cout <<")2+" << q;
+Â Â Â Â Â Â Â Â parametry();
+Â Â Â Â Â Â Â Â Â 
 }
- 
+Â 
 void ogolna()
 {
- string wzor;
- cout << "y=a(x-p)2+q -> y=ax2+bx+c" << endl;
- cout << "Podaj a: ";
-     a= pobierz(a);
- cout << "Podaj p: ";
+Â string wzor;
+Â cout << "y=a(x-p)2+q -> y=ax2+bx+c" << endl;
+Â cout << "Podaj a: ";
+Â Â Â Â Â a= pobierz(a);
+Â cout << "Podaj p: ";
 p = pobierz(p);
- cout << "Podaj q: ";
+Â cout << "Podaj q: ";
 q= pobierz(q);
-  
- b = -2*(p*a);
- delta = (-4)*(a*q);
- c = delta / ((b*b) + 4*a);
-  
- cout << "Wartosc b: " << b << endl;
- cout << "Wartosc wyroznika trojmianu kwadratowego(delty): " << delta << endl;
- cout << "Wartosc c: " << c << endl << endl;
- cout << "Postac ogolna: ";
- cout << "y=" << a << "x2";
+Â Â 
+Â b = -2*(p*a);
+Â delta = (-4)*(a*q);
+Â c = delta / ((b*b) + 4*a);
+Â Â 
+Â cout << "Wartosc b: " << b << endl;
+Â cout << "Wartosc wyroznika trojmianu kwadratowego(delty): " << delta << endl;
+Â cout << "Wartosc c: " << c << endl << endl;
+Â cout << "Postac ogolna: ";
+Â cout << "y=" << a << "x2";
 if(b>0) cout << "+" << b;
- cout << b << "x";
+Â cout << b << "x";
 if(c>0) cout << "+"; 
 cout << c;
-    
- parametry();
+Â Â Â Â 
+Â parametry();
 }
 int main()
 {
 cout << "Kalkulator liczacy postac kanoniczna z ogolnej i odwrotnie(z parametrami)" << endl;
 cout << "by Jasiek65" << endl;
 cout << "--------------------------------------" << endl; 
- cout << "y=ax2+bx+c -> y=a(x-p)2+q  ->  y=ax2+bx+c" << endl;
- 
-     
-    cout << "W programie dostepne sa nastepujace opcje: " << endl;
-    do
-    {
-         funkcje_programu();
-          cout << "Wybierz opcje(podaj liczbe): ";
-          cin >> liczba;
-          switch ( liczba )
-          {
-          case 1:
-               kanoniczna();
-               break;
-          case 2:
-               ogolna();
-               break;       
-          }      
+Â cout << "y=ax2+bx+c -> y=a(x-p)2+qÂ  ->Â  y=ax2+bx+c" << endl;
+Â 
+Â Â Â Â Â 
+Â Â Â Â cout << "W programie dostepne sa nastepujace opcje: " << endl;
+Â Â Â Â do
+Â Â Â Â {
+Â Â Â Â Â Â Â Â Â funkcje_programu();
+Â Â Â Â Â Â Â Â Â Â cout << "Wybierz opcje(podaj liczbe): ";
+Â Â Â Â Â Â Â Â Â Â cin >> liczba;
+Â Â Â Â Â Â Â Â Â Â switch ( liczba )
+Â Â Â Â Â Â Â Â Â Â {
+Â Â Â Â Â Â Â Â Â Â case 1:
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â kanoniczna();
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â break;
+Â Â Â Â Â Â Â Â Â Â case 2:
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â ogolna();
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â break;Â Â Â Â Â Â  
+Â Â Â Â Â Â Â Â Â Â }Â Â Â Â Â  
 }while (liczba != 0);
- 
- return 0;   
+Â 
+Â return 0;Â Â  
 }
