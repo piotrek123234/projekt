@@ -11,20 +11,21 @@
             }
         </style>
         <title>HTML5 Test!</title>
-    </head>
+    </head>kolejna zmiaana
+    
     <body>
         <header>
-            <h1>Nag³ówek</h1>
+            <h1>NagÂ³Ã³wek</h1>
         </header>
         <article>
             <header>
-                <h1>Tytu³ artyku³u</h1>
+                <h1>TytuÂ³ artykuÂ³u</h1>
             </header>
             <section id="article-content">
-                <p>Tutaj w³aœciwa treœæ artyku³u...</p>
+                <p>Tutaj wÂ³aÅ“ciwa treÅ“Ã¦ artykuÂ³u...</p>
             </section>
             <footer>
-                <p>Stopka artyku³u</p>
+                <p>Stopka artykuÂ³u</p>
             </footer>
         </article>
         <footer>
