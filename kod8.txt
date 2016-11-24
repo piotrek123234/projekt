@@ -8,7 +8,7 @@ double wiersz[150];
 int main(int argc, char* argv[])
 {
 
-ofstream wpisz;
+ofstream wpisz;zmiana
 wpisz.open("plik.txt");
 
 
