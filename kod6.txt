@@ -3,84 +3,84 @@
 #include cstdlib
 #include conio.h
 using namespace std;
- 
- int pobierz(unsigned int liczba){
-           if(liczba1000)
-           {
-            cout  Najwieksza liczba moze byc 1000!n;
-            cin.clear(); 
-            cin.sync();  
- 
-                          }
- 
-            while(!(cinliczba)){
-            cout  Podaj poprawna wartosc ;
-  cin.clear(); 
-  cin.sync();             
- 
-                                  }
-            return liczba;
-            }
- 
+Â 
+Â int pobierz(unsigned int liczba){
+Â Â Â Â Â Â Â Â Â Â Â if(liczba1000)
+Â Â Â Â Â Â Â Â Â Â Â {
+Â Â Â Â Â Â Â Â Â Â Â Â cout  Najwieksza liczba moze byc 1000!n;
+Â Â Â Â Â Â Â Â Â Â Â Â cin.cl2312r(); 
+Â Â Â Â Â Â Â Â Â Â Â Â cin.sync();Â  
+Â 
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â }
+Â 
+Â Â Â Â Â Â Â Â Â Â Â Â while(!(cinliczba)){
+Â Â Â Â Â Â Â Â Â Â Â Â cout  Podaj poprawna wartosc ;
+Â Â cin.clear(); 
+Â Â cin.sync();Â Â Â Â Â Â Â Â Â Â Â Â  
+Â 
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â }
+Â Â Â Â Â Â Â Â Â Â Â Â return liczba;
+Â Â Â Â Â Â Â Â Â Â Â Â }
+Â 
 int main()
 {
-    cout  Witaj w programie - Zgadnij liczbe  endl
-          Podaj dowolna liczbe ;
+Â Â Â Â cout  Witaj w programie - Zgadnij liczbe  endl
+Â Â Â Â Â Â Â Â Â  Podaj dowolna liczbe ;
 start
-    clock_t start, finish;
- 
+Â Â Â Â clock_t start, finish;
+Â 
 double czas;
 start = clock();
- 
-    int zgadywana = 0, proby=0;
-    srand( time( NULL ) );
-  int wylosowana_liczba =( rand() % 1000 );
+Â 
+Â Â Â Â int zgadywana = 0, proby=0;
+Â Â Â Â srand( time( NULL ) );
+Â Â int wylosowana_liczba =( rand() % 1000 );
 while(zgadywana != wylosowana_liczba)
 {
- 
-      zgadywana = pobierz(zgadywana);
- 
-        if(zgadywanawylosowana_liczba)        
-        cout  Wylosowana liczba jest mniejsza od twojej, sprobuj ponownie!n;
-        else if(zgadywanawylosowana_liczba)                
-                cout  Wylosowana liczba jest wieksza od twojej, sprobuj ponownie!n;
-                proby++;
-                }
- 
-                system(cls);
-                system(color 02);
+Â 
+Â Â Â Â Â Â zgadywana = pobierz(zgadywana);
+Â 
+Â Â Â Â Â Â Â Â if(zgadywanawylosowana_liczba)Â Â Â Â Â Â Â  
+Â Â Â Â Â Â Â Â cout  Wylosowana liczba jest mniejsza od twojej, sprobuj ponownie!n;
+Â Â Â Â Â Â Â Â else if(zgadywanawylosowana_liczba)Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â  
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â cout  Wylosowana liczba jest wieksza od twojej, sprobuj ponownie!n;
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â proby++;
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â }
+Â 
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â system(cls);
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â system(color 02);
 cout  GRATULUJEMY! TWOJA LICZBA TO   wylosowana_liczba  endl;
 cout  LICZBA PROB   proby  endl;
 finish = clock();
 czas = (double)(finish - start)  CLOCKS_PER_SEC;
 cout  POSZUKIWANIE LICZBY ZAJELO CI   czas   SEKUND;
-                 Beep(294,600); d
-                 Beep(349,400); f
-                 Beep(294,400); d
-                 Beep(392,300); g
-                 Beep(294,200); d
-                 Beep(262,600); c
- 
-                 Beep(294,600); d
-                 Beep(440,400); a
-                 Beep(294,600); d
-                 Beep(466,200); b
-                 Beep(440,200); a
-                 Beep(349,600); f
- 
-                  Beep(294,800); d
-                  Beep(440,200); a
-                  Beep(440,200); a
-                  Beep(294,600); d  
-        char znak;
-          cout nnn Czy chcesz zagrac ponownie TN;
-    znak = getch();  
- 
-    if(znak == 't')
-    {
-    system(cls);
-        goto start;  
-            }
- 
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Beep(294,600); d
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Beep(349,400); f
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Beep(294,400); d
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Beep(392,300); g
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Beep(294,200); d
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Beep(262,600); c
+Â 
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Beep(294,600); d
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Beep(440,400); a
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Beep(294,600); d
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Beep(466,200); b
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Beep(440,200); a
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Beep(349,600); f
+Â 
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Beep(294,800); d
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Beep(440,200); a
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Beep(440,200); a
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Beep(294,600); dÂ  
+Â Â Â Â Â Â Â Â char znak;
+Â Â Â Â Â Â Â Â Â Â cout nnn Czy chcesz zagrac ponownie TN;
+Â Â Â Â znak = getch();Â  
+Â 
+Â Â Â Â if(znak == 't')
+Â Â Â Â {
+Â Â Â Â system(cls);
+Â Â Â Â Â Â Â Â goto start;Â  
+Â Â Â Â Â Â Â Â Â Â Â Â }
+Â 
 return 0;
 }
